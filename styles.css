@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(12, 28, 62);
+  position: relative;
+  z-index: 999;
+}
+
+.navbartop {
+  background-color: rgba(8, 34, 78, 0.9);
+  /* overflow: hidden;
+  height: 67.19px; */
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 24px;
+  align-items: center;
+  
+}
+
+.navbartop .pokemon-logo {
+  width: 80px;
+  height: 50.19px;
+}
+
+.navbartop .svg{
+  width: 48px;
+  height: 48px; 
+}
+
+.navbar-list {
+  text-align: right;
+  list-style-type: none;
+  font-family: lato;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 1.5px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar-list li {
+  margin: 0px 0px;
+  border: transparent 2px solid;
+  padding: 5px 20px;
+  border-radius: 25px;
+}
+
+.navbar-list li:hover {
+  border: #fff 2px solid;
+  padding: 5px 20px;
+  border-radius: 25px;
+}
+
+/* .pokemon-video{
+  height: auto;
+}  */
+
+
+video {
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+}
+
+.button {
+  color: #fff;
+  font-family: lato;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 1.5px;
+  border: 2px solid #67cba9;
+  border-radius: 999px;
+  padding: 4px 24px;
+  display: none;
+}
+
+.button::after {
+  content: "";
+  display: inline-block;
+  border-left: 6px solid rgba(0, 0, 0, 0);
+  border-right: 6px solid rgba(0, 0, 0, 0);
+  border-top: 6px solid #ffcb01;
+  margin-left: 12px;
+  margin-bottom: 1px;
+}
+
+/* feature container */
+.feature {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-image: url(./images/bg-image.png);
+  height: 15vh;
+}
+
+.feature-img1 {
+  position: absolute;
+  top: 33%;
+  left: 5%;
+  width: 80px;
+  border-radius: 50%;
+
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(247, 247, 247, 0.9);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(247, 247, 247, 0.9);
+  box-shadow: 0px 0px 10px 1px rgba(247, 247, 247, 0.9);
+}
+
+.feature-text-title {
+  position: absolute;
+  top: 33%;
+  left: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-text-title h1 {
+  color: rgb(0, 0, 0);
+  font-family: lato;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.feature-text-title p {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #18242e;
+  font-family: "Lato", sans-serif;
+  width: 80%;
+  margin-top: 8px;
+  display: none;
+}
+
+.feature-btn {
+  font-weight: 700;
+  border: 2px solid #0061af;
+  padding: 10px 24px;
+  border-radius: 999px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  color: #0061af;
+  font-family: lato;
+  width: 100px;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.pokemon-image {
+  position: absolute;
+  width: 115px;
+  top: 45%;
+  left: 65%;
+}
+
+
+
+
+@media (min-width: 1380px) {
+  .navbartop .svg{
+    display: none;
+  }
+
+  .button {
+    display: block;
+  }
+
+  .navbar-list {
+    
+    display: flex;
+  }
+}
+
+@media (min-width: 1700px) {
+  body{
+    max-width: 75%;
+    margin: auto;
+    box-shadow: 1px 1px 40px #000;
+  }
+}
+
+@media (min-width: 600px) {
+  .feature-img1 {
+    position: absolute;
+    top: 33%;
+    left: 5%;
+    width: 80px;
+    border-radius: 50%;
+  
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(247, 247, 247, 0.9);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(247, 247, 247, 0.9);
+    box-shadow: 0px 0px 10px 1px rgba(247, 247, 247, 0.9);
+  }
+  
+  .feature-text-title {
+    position: absolute;
+    top: 33%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feature-text-title h1 {
+    color: rgb(0, 0, 0);
+    font-family: lato;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.3;
+  }
+  
+  .feature-text-title p {
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #18242e;
+    font-family: "Lato", sans-serif;
+    width: 80%;
+    margin-top: 8px;
+    display: none;
+  }
+  
+  .feature-btn {
+    font-weight: 700;
+    border: 2px solid #0061af;
+    padding: 10px 24px;
+    border-radius: 999px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    color: #0061af;
+    font-family: lato;
+    width: 100px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 10px;
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .feature {
+    height: 18vh;
+  }
+  
+  .feature-img1 {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 130px;
+  }
+}
+
+
+
+
