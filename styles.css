@@ -169,16 +169,41 @@ video {
   position: relative;
   width: 100%;
   background-image: url(./images/latestnewsbg.jpg);
-  height: 40vh;
+  height: 47.5vh;
 }
 
-.latest-news .h1{
-  position: absolute;
+.latest-news h1{
   font-family: lato;
   font-weight: 900;
-  font-size: 1px;
-  display: table;
-  text-align: justify;
+  font-size: 28px;
+  padding-top: 6.5%;
+  padding-bottom: 6.5%;
+  display: block;
+  text-align: center;
+}
+
+.latest-news .latest-news-posts .newspic1{
+  height: 60%;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 10px;
+}
+
+.latest-news .news-button {
+  font-weight: 700;
+  border: 2px solid #0061af;
+  padding: 10px 24px;
+  border-radius: 999px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  color: #0061af;
+  font-family: lato;
+  width: 125px;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 10px;
+  margin-left: 34%;
 }
 
 
