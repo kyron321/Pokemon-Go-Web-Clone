@@ -99,7 +99,7 @@ video {
   top: 0;
   width: 100%;
   background-image: url(./images/bg-image.png);
-  height: 15vh;
+  height: 25vh;
 }
 
 .feature-img1 {
@@ -165,7 +165,21 @@ video {
   left: 65%;
 }
 
+.latest-news{
+  position: relative;
+  width: 100%;
+  background-image: url(./images/latestnewsbg.jpg);
+  height: 40vh;
+}
 
+.latest-news .h1{
+  position: absolute;
+  font-family: lato;
+  font-weight: 900;
+  font-size: 1px;
+  display: table;
+  text-align: justify;
+}
 
 
 @media (min-width: 1380px) {
@@ -258,6 +272,9 @@ video {
     left: 60%;
   }
 }
+
+
+
 
 
 
