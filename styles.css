@@ -176,14 +176,14 @@ video {
   font-family: lato;
   font-weight: 900;
   font-size: 28px;
-  padding-top: 6.5%;
-  padding-bottom: 6.5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   display: block;
   text-align: center;
 }
 
 .latest-news .latest-news-posts .newspic1{
-  height: 60%;
+  height: 25vh;
   width: 80%;
   margin-left: 10%;
   border-radius: 10px;
@@ -203,7 +203,50 @@ video {
   margin-top: 10px;
   cursor: pointer;
   font-size: 10px;
-  margin-left: 34%;
+  margin-left: 35%;
+}
+
+.feature-2{
+  position: absolute;
+  width: 100%;
+  background-image: url(./images/background2.jpg);
+  height: 31vh;
+}
+
+.feature-2 .pokeball{
+  position: relative;
+  grid-area: icon;
+  padding: 20px;
+  border-radius: 50%;
+  background: #fff;
+  width: 80px;
+  height: 80px;
+  top: 17.5%;
+  left: 5%;
+}
+
+.feature-2 h1{
+  position: relative;
+  font-weight: 300px;
+  font-size: 26px;
+  line-height: 1.4;
+  color: #fff;
+  font-family: lato;
+  text-align: center;
+  width: 100%;
+  margin-left: 10%;
+  
+}
+
+.feature-2 p{
+  position: relative;
+  color: #fff;
+  font-family: lato;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: justify;
+  padding: 7.5%;
 }
 
 
