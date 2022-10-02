@@ -234,8 +234,8 @@ video {
   font-family: lato;
   text-align: center;
   width: 100%;
-  margin-left: 10%;
-  
+  margin-left: 5%;
+  top: -32.5px;
 }
 
 .feature-2 p{
@@ -247,7 +247,16 @@ video {
   line-height: 25px;
   text-align: justify;
   padding: 7.5%;
+  top: -30px;
 }
+
+.feature-2 .frogpic{
+  position: relative;
+  width: 100%;
+  top: -30px;
+  
+}
+
 
 
 @media (min-width: 1380px) {
